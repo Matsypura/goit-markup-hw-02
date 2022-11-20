@@ -1,3 +1,74 @@
-.but {
+/* цвет основного текста 
+телефона емейла, описание сотрудников #434455 */
+
+/* цвет текста заголовков <h2++> 
+имена сотрудников ссилок, 
+webstudio,portfolio++ 
+фон footer and studio button #2E2F42 */
+
+/* цвет footer #E7E9FC */
+
+/* кнопки 4 на portfolio 
++ фон all orden button 
+span web #4D5AE5 */
+
+
+
+/* #region footer */
+
+/* oll setings */
+.page{
+    background-color:#FFFFFF;
+}
+ul {
+    list-style: none;
+}
+
+
+/* header-panel */
+header{
+    background-color: #FFFFFF;
+
+}
+.header-nav{
+    color: #2E2F42;
+}
+.site-nav .link{
+    color:#2E2F42;
+}
+.site-nav .link:hover, 
+.site-nav .link:focus {
+    color: red;
+}
+span{
     color: #4D5AE5;
+}
+   
+
+.contacts{
+    color: #434455;
+}
+
+/* body-panel */
+
+
+/* team-panel */
+.team{
+    background-color: #F4F4FD;
+}
+
+
+/*section-button*/
+.section-button{
+    color: #FFFFFF;
+    background-color: #2E2F42;
+
+}
+
+
+
+/* footer-panel */
+.footer{
+
+    background-color: #2E2F42;
 }

@@ -13,62 +13,102 @@ webstudio,portfolio++
 span web #4D5AE5 */
 
 
-
-/* #region footer */
-
-/* oll setings */
-.page{
+/* General settings */
+body{
+    font-family:Roboto;
     background-color:#FFFFFF;
 }
+
 ul {
     list-style: none;
 }
 
 
-/* header-panel */
-header{
-    background-color: #FFFFFF;
+
+/* header */
+.header-nav{
+color: #2E2F42;
 
 }
-.header-nav{
-    color: #2E2F42;
+
+.logo{
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: 21px;
 }
-.site-nav .link{
-    color:#2E2F42;
+
+
+.contacts{
+    color: #434455
+ }
+
+ .logo:hover,
+ .logo:focus{
+    color: blue;
+ }
+ .hero-button:hover,
+ .hero-button:focus{
+    color: blue;
+ }
+
+ .link:hover,
+ .link:focus{
+color: blue;
 }
-.site-nav .link:hover, 
-.site-nav .link:focus {
-    color: red;
-}
+
 span{
     color: #4D5AE5;
 }
-   
-
-.contacts{
-    color: #434455;
+/* hero */
+.section {
+color: #FFFFFF;
+background: #2E2F42;
 }
 
-/* body-panel */
-
-
-/* team-panel */
-.team{
-    background-color: #F4F4FD;
-}
-
-
-/*section-button*/
-.section-button{
+.hero-button{
     color: #FFFFFF;
-    background-color: #2E2F42;
+    background: #4D5AE5;
+}
+h2, h3{
+    color: #2E2F42;
 
 }
+.qualiti{
+    color: #434455;
+    
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+}
+/* taem panel */
+.team{
+background: #F4F4FD;
+color: #2E2F42;
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px
+}
+.workteam{
+    color: #434455;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+}
 
-
-
-/* footer-panel */
-.footer{
-
-    background-color: #2E2F42;
+/* footer */
+.bottom{
+    background: #2E2F42;
+   
+}
+.bottom-text{
+    color: #FFFFFF;
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
 }

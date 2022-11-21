@@ -11,12 +11,18 @@ webstudio,portfolio++
 /* кнопки 4 на portfolio 
 + фон all orden button 
 span web #4D5AE5 */
+/* #2E2F42 */
+:root{
+ --text-description:#434455; /* #434455 */
+--block-header: #2E2F42;   /* #2E2F42 */
+--accent-text:  #4D5AE5;     /* #4D5AE5 IRIS */
+}
 
 
 /* General settings */
 body{
     font-family:Roboto;
-    background-color:#FFFFFF;
+    background-color:#FFFFFF
 }
 
 ul {
@@ -27,7 +33,7 @@ ul {
 
 /* header */
 .header-nav{
-color: #2E2F42;
+color: var(--block-header);
 
 }
 
@@ -41,42 +47,42 @@ line-height: 21px;
 
 
 .contacts{
-    color: #434455
+    color:var(--text-description);
  }
 
  .logo:hover,
  .logo:focus{
-    color: blue;
+    color: var(--accent-text);
  }
  .hero-button:hover,
  .hero-button:focus{
-    color: blue;
+    color:var(--accent-text);
  }
 
  .link:hover,
  .link:focus{
-color: blue;
+color: var(--accent-text);
 }
 
 span{
-    color: #4D5AE5;
+    color: var(--accent-text);
 }
 /* hero */
 .section {
 color: #FFFFFF;
-background: #2E2F42;
+background: var(--block-header);
 }
 
 .hero-button{
     color: #FFFFFF;
-    background: #4D5AE5;
+    background:var(--accent-text);
 }
 h2, h3{
-    color: #2E2F42;
+    color: var(--block-header);
 
 }
 .qualiti{
-    color: #434455;
+    color: var(--text-description);
     
 font-style: normal;
 font-weight: 400;
@@ -93,7 +99,7 @@ font-size: 20px;
 line-height: 24px
 }
 .workteam{
-    color: #434455;
+    color: var(--text-description);
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
@@ -102,7 +108,7 @@ line-height: 24px;
 
 /* footer */
 .bottom{
-    background: #2E2F42;
+    background: var(--block-header);
    
 }
 .bottom-text{

@@ -12,133 +12,135 @@ webstudio,portfolio++
 + фон all orden button 
 span web #4D5AE5 */
 /* #2E2F42 */
+
+
+
 :root{
- --text-description:#434455; /* #434455 */
---block-header: #2E2F42;   /* #2E2F42 */
---accent-text:  #4D5AE5;     /* #4D5AE5 IRIS */
---white-text: #FFFFFF;
-}
+    --text-description:#434455; /* #434455 */
+   --block-header: #2E2F42;   /* #2E2F42 */
+   --accent-text:  #4D5AE5;     /* #4D5AE5 IRIS */
+   --white-text: #FFFFFF;
+   --footer-logo: #F4F4FD;
+   --footer-text: #E7E9FC;
 
-
-/* General settings */
-body{
-    font-family:Roboto;   
-    background-color: var(--white-text)
-}
-
-ul {
-    list-style: none;
-}
-
-
-
-/* header */
-nav .link {
-    color: var(--block-header); /* new */
-}
-
-
-.logo{
-    font-family: 'Raleway';
-font-style: normal;
-font-weight: 800;
-font-size: 18px;
-line-height: 21px;
-color: var(--block-header);
-}
-.logo:hover,
- .logo:focus{
-    color: var(--accent-text);
- }
-/* contacts */
-ul .link{
-    color:var(--text-description);
- }
-
- 
- /* button in studio */
- .hero-button:hover{
-    color:var(--accent-text);
-    background-color: var(--white-text);
-    }
-    .hero-button:focus{
-        color: var(--accent-text);
-        background-color: var(--white-text);
-        } 
-
-/* наведення на посилання  */
- .link:hover,
- .link:focus{
-color: var(--accent-text);
-}
-
-span{
-    color: var(--accent-text);
-}
-/* hero */
-.section {
-color: var(--white-text);
-background: var(--block-header);
-}
-
-.hero-button{
-    color: var(--white-text);
-    background:var(--accent-text);
-}
-h2, h3{
-    color: var(--block-header);
-
-}
-.qualiti{
-    color: var(--text-description);
-    
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-}
-/* taem panel */
-.team{
-background: #F4F4FD;
-color: var(--block-header);
-font-style: normal;
+   }
+   
+   
+   /*#region--General settings-- */
+   body{
+       font-family:Roboto;   
+       background-color: var(--white-text)
+   }
+   
+   ul {
+       list-style: none;
+   }
+   ul h2, h3{
+    color:var(--block-header);
+    font-style: normal;
 font-weight: 600;
 font-size: 20px;
-line-height: 24px
-}
-.workteam{
-    color: var(--text-description);
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
 line-height: 24px;
 }
-
-/* footer */
-.bottom{
-    background: var(--block-header);
-   
+ h2{
+    color:var(--block-header);
+    font-style: normal;
+font-weight: 600;
+font-size: 36px;
+line-height: 40px;
 }
-.bottom-text{
-    color: var(--white-text);
+
+ul p{
+    color: var(--text-description);
     font-style: normal;
 font-weight: 400;
 font-size: 16px;
 line-height: 24px;
 }
-footer .logo{
-    color: var(--white-text); /* new */
-}
-/* идеи */
-.sorting{
+   /* #endregion --General settings--  */
+   
+   /*#region header */
+   
+   /* navigation */
+   nav .link {
+       color: var(--block-header); /* new */
+   }
+   
+   .link:hover,
+   .link:focus{
+  color: var(--accent-text);
+  } 
+  
+   /* фокус на webSTUDIO */
+   .logo:focus{
+    color:  var(--text-description);
+} 
+span{
+    color: var(--accent-text);
+} 
+   .logo{
+       font-family: 'Raleway';
+   font-style: normal;
+   font-weight: 800;
+   font-size: 18px;
+   line-height: 21px;
+   color: var(--block-header);
+   }
+   
+   .logo:hover,
+    .logo:focus{
+       color:  var(--text-description);
+    }
+   
+    /* contacts */
+   
+    .link-contact{
+       color:var(--text-description);
+       font-style: normal;
+       font-weight: 400;
+       font-size: 16px;
+       line-height: 24px;
+    } 
+    .link-contact:hover,
+    .link-contact:focus{
+   color: var(--accent-text);
+   } 
+   /* #endregion */
+   
+   /* #region --menu--*/
+    
+ /* hero */
 
+
+ /* секція заголовку */
+ .section {
+    color: var(--white-text);
+    background: var(--block-header);
+    }
+
+   
+    /* button in studio */
+    .hero-button{
+        color: var(--white-text);
+        background:var(--accent-text);
+    }
+    .hero-button:hover, .hero-button:focus{
+       color:var(--accent-text);
+       background-color: var(--white-text);
+       }
+       /* taem panel */
+   .team{
+    background:var(--footer-logo);
+    }
+
+
+   /* sorting button  */
+   .sorting{
+   
     display: flex;
     font-family: sans-serif;
    
 }
-
-
-
 .button-primary{
     background-color: #F4F4FD;
    color: var(--accent-text);
@@ -149,37 +151,37 @@ align-items: center;
 padding: 8px 16px;
 
 }
-/* portfolio */
-ul h2{
-    color:var(--block-header)
-}
-ul p{
-    color: var(--text-description);
-}
-/* .button-portfolio:hover,
-.button-portfolio:focus{
-    background: red;
-} */
 
 
-
-.button-primary:hover {
+/* активація по кнопкам */
+.button-primary:hover, .button-primary:focus{
     appearance: none;
     border: 0;
- 
-    background-color: #4D5AE5;
-    color: #FFFFFF;
+    background-color: var(--accent-text);
+    color: var(--white-text);
     
-   
-  
   }
 
-  .button-primary:focus {
-    appearance: none;
-    border: 0;
+       /*#endregion*/
+
+    /* #region --footer--*/
    
-    background-color: #4D5AE5;
-    color:  #FFFFFF;
+   /* footer */
+   .bottom{
+    background: var(--block-header);
    
-  
-  } 
+}
+.bottom-text{
+ color: var(--footer-text);
+ font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+}
+
+footer .logo{
+    color: var(--footer-logo); /* new */
+} 
+
+
+/*#endregion */

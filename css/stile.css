@@ -21,7 +21,7 @@ span web #4D5AE5 */
 
 /* General settings */
 body{
-    font-family:Roboto;
+    font-family:Roboto;   /* Roboto */
     background-color:#FFFFFF
 }
 
@@ -118,3 +118,39 @@ font-weight: 400;
 font-size: 16px;
 line-height: 24px;
 }
+
+/* идеи */
+.sorting{
+
+    display: flex;
+    font-family: sans-serif;
+   
+}
+.button-portfolio{
+   color: blue;
+}
+/* .button-portfolio:hover,
+.button-portfolio:focus{
+    background: red;
+} */
+
+.button-portfolio:hover {
+    appearance: none;
+    border: 0;
+ 
+    background-color: #4D5AE5;
+    color: #FFFFFF;
+    
+   
+  
+  }
+
+  .button-portfolio:focus {
+    appearance: none;
+    border: 0;
+   
+    background-color: #4D5AE5;
+    color:  #FFFFFF;
+   
+  
+  } 

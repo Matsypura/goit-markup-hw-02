@@ -16,98 +16,84 @@ span web #4D5AE5 */
 
 
 :root{
-    --text-description:#434455; /* #434455 */
-   --block-header: #2E2F42;   /* #2E2F42 */
-   --accent-text:  #4D5AE5;     /* #4D5AE5 IRIS */
+   --text:#434455; /* #434455 --text-description*/
+   --dark: #2E2F42;   /* #2E2F42 --block-header */
+   --primary-brand:  #4D5AE5;     /* #4D5AE5 IRIS */
    --white-text: #FFFFFF;
-   --footer-logo: #F4F4FD;
-   --footer-text: #E7E9FC;
+   --light: #F4F4FD;
+   --accent: #E7E9FC;
 
    }
    
    
-   /*#region--General settings-- */
+   /*#region-- general settings-- */
    body{
-       font-family:Roboto;   
-       background-color: var(--white-text)
+       font-family:Roboto, sans-serif;   
+       background-color: var(--white-text);
+       color: var(--dark);
+       font-weight: normal;
+       letter-spacing: 2%;
    }
    
    ul {
        list-style: none;
    }
-   ul h2, h3{
-    color:var(--block-header);
-    font-style: normal;
-font-weight: 600;
-font-size: 20px;
-line-height: 24px;
-}
- h2{
-    color:var(--block-header);
-    font-style: normal;
-font-weight: 600;
-font-size: 36px;
-line-height: 40px;
-}
-
-ul p{
-    color: var(--text-description);
-    font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-}
+  
    /* #endregion --General settings--  */
    
    /*#region header */
    
    /* navigation */
    nav .link {
-       color: var(--block-header); /* new */
+       color: var(--dark); 
+       
    }
-   
+
+    /* фокус на webSTUDIO */
+    .logo{
+        font-family: 'Raleway';
+    
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.16;
+    color: var(--dark);
+    }
+    
+    .logo:hover,
+     .logo:focus{
+        color:  var(--text);
+     }
+    span{
+        color: var(--primary-brand);
+    } 
+    /* сторінки */
+   .site-nav{
+    
+font-weight: 600;
+font-size: 16px;
+line-height: 1.5;
+   }
    .link:hover,
    .link:focus{
-  color: var(--accent-text);
+  color: var(--primary-brand);
   } 
   
-   /* фокус на webSTUDIO */
-   .logo:focus{
-    color:  var(--text-description);
-} 
-span{
-    color: var(--accent-text);
-} 
-   .logo{
-       font-family: 'Raleway';
-   font-style: normal;
-   font-weight: 800;
-   font-size: 18px;
-   line-height: 21px;
-   color: var(--block-header);
-   }
-   
-   .logo:hover,
-    .logo:focus{
-       color:  var(--text-description);
-    }
-   
     /* contacts */
    
     .link-contact{
-       color:var(--text-description);
-       font-style: normal;
-       font-weight: 400;
+       color:var(--text);
+       
+       
        font-size: 16px;
-       line-height: 24px;
+       line-height: 1.5;
     } 
     .link-contact:hover,
     .link-contact:focus{
-   color: var(--accent-text);
+   color: var(--primary-brand);
    } 
-   /* #endregion */
+   /* #endregion --header-- */
    
-   /* #region --menu--*/
+   /* #region --menu-- */
     
  /* hero */
 
@@ -115,26 +101,76 @@ span{
  /* секція заголовку */
  .section {
     color: var(--white-text);
-    background: var(--block-header);
+    background: var(--dark);
     }
-
+.section-title{
+    
+font-weight:bold;
+font-size: 56px;
+line-height: 1.07;
+letter-spacing: 2%;
+}
    
     /* button in studio */
     .hero-button{
         color: var(--white-text);
-        background:var(--accent-text);
+        background-color:#404BBF;
+        cursor: pointer;
+        
+        font-weight:bold;
+        font-size: 16px;
+        line-height: 1.18;
+        letter-spacing: 4%;
+
     }
+    
     .hero-button:hover, .hero-button:focus{
-       color:var(--accent-text);
-       background-color: var(--white-text);
+       color:varvar(--white-text);
+       background-color: var(--primary-brand);
        }
+
+
+
+       /* Quality and text */
+
+       ul h3{
+        color:var(--dark); 
+       
+        font-weight:bold;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 2%;
+    }
+     h2{
+        color:var(--dark);
+        
+        font-weight:bold;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 2%;
+    
+    }
+    
+    ul p{
+        color: var(--text);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 4%;
+    }
+    ul h2 {
+     font-weight:bold;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 2%;
+    }
+       
        /* taem panel */
    .team{
-    background:var(--footer-logo);
+    background:var(--light);
     }
 
 
-   /* sorting button  */
+   /* sorting button portfolio */
    .sorting{
    
     display: flex;
@@ -142,13 +178,16 @@ span{
    
 }
 .button-primary{
-    background-color: #F4F4FD;
-   color: var(--accent-text);
+    background-color:var(--light);
+   color: var(--primary-brand);
    display: flex;
+   cursor: pointer;
+   font-weight:bold;
 flex-direction: row;
 justify-content: center;
 align-items: center;
 padding: 8px 16px;
+letter-spacing: 4%;
 
 }
 
@@ -157,31 +196,31 @@ padding: 8px 16px;
 .button-primary:hover, .button-primary:focus{
     appearance: none;
     border: 0;
-    background-color: var(--accent-text);
+    background-color: var(--primary-brand);
     color: var(--white-text);
     
   }
 
-       /*#endregion*/
+       /* #endregion  --menu-- */
 
     /* #region --footer--*/
    
    /* footer */
    .bottom{
-    background: var(--block-header);
+    background-color: var(--dark);
    
 }
 .bottom-text{
- color: var(--footer-text);
- font-style: normal;
-font-weight: 400;
+ color: var(--accent);
+ 
+
 font-size: 16px;
-line-height: 24px;
+line-height: 1.5;
 }
 
 footer .logo{
-    color: var(--footer-logo); /* new */
+    color: var(--light); 
 } 
 
 
-/*#endregion */
+/* #endregion --footer--*/

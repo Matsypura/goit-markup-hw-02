@@ -23,11 +23,10 @@
 
 /*#region-- general settings-- */
 body {
-  font-family: Roboto, sans-serif;
+font-family: "Roboto", sans-serif;
   background-color: var(--white-text);
   color: var(--dark);
-  font-weight: normal;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
 }
 
 ul {
@@ -39,14 +38,15 @@ ul {
 /*#region header */
 
 /* navigation */
-nav .link {
+.nav-link {
+  text-decoration: none;
   color: var(--dark);
 }
 
 /* фокус на webSTUDIO */
 .logo {
-  font-family: "Raleway";
-
+  font-family: "Raleway", sans-serif;
+text-decoration: none;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.16;
@@ -62,12 +62,12 @@ span {
 }
 /* сторінки */
 .site-nav {
-  font-weight: 600;
+  font-weight: bold;
   font-size: 16px;
   line-height: 1.5;
 }
-.link:hover,
-.link:focus {
+.nav-link:hover,
+.nav-link:focus {
   color: var(--primary-brand);
 }
 
@@ -75,7 +75,7 @@ span {
 
 .link-contact {
   color: var(--text);
-
+text-decoration: none;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -98,7 +98,7 @@ span {
   font-weight: bold;
   font-size: 56px;
   line-height: 1.07;
-  letter-spacing: 2%;
+ 
 }
 
 /* button in studio */
@@ -106,11 +106,11 @@ span {
   color: var(--white-text);
   background-color: #404bbf;
   cursor: pointer;
-
+font-family: "Roboto", sans-serif; 
   font-weight: bold;
   font-size: 16px;
   line-height: 1.18;
-  letter-spacing: 4%;
+  letter-spacing: 0.04em;
 }
 
 .hero-button:hover,
@@ -120,36 +120,62 @@ span {
 }
 
 /* Quality and text */
+/* Візуально прибрав заголовки */
+.visually-hidden{
+  
+      position: absolute;
+      white-space: nowrap;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      border: 0;
+      padding: 0;
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      margin: -1px;
+    }
+  /* Контур для карток працівників */
+  .quality-list{
+    color:var(--dark);
+    background: var(--white-text);
+    font-weight: bold;
+      font-size: 20px;
+      line-height: 1.2;
+      
+  }
+    /* Сards galery */
 
-ul h3 {
+
+    /* Підкреслення посилань портфоліо*/
+    .galery-cards{
+      text-decoration: none;
+    }
+    /* Заголовки h3 */
+.quality-title {
   color: var(--dark);
 
   font-weight: bold;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 2%;
+  
 }
-h2 {
+/* Заголовки параграфів */
+.quality-title-paragraph{
+  color: var(--text);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+
+}
+.secondary-title {
   color: var(--dark);
 
   font-weight: bold;
   font-size: 36px;
   line-height: 1.11;
-  letter-spacing: 2%;
+
 }
 
-ul p {
-  color: var(--text);
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 4%;
-}
-ul h2 {
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 2%;
-}
 
 /* taem panel */
 .team {
@@ -159,7 +185,7 @@ ul h2 {
 /* sorting button portfolio */
 .sorting {
   display: flex;
-  font-family: sans-serif;
+  font-family: "Roboto",sans-serif;
 }
 .button-primary {
   background-color: var(--light);
@@ -171,14 +197,17 @@ ul h2 {
   justify-content: center;
   align-items: center;
   padding: 8px 16px;
-  letter-spacing: 4%;
+  letter-spacing: 0.04em;
+  font-family: "Roboto" , sans-serif;
+  font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 /* активація по кнопкам */
 .button-primary:hover,
 .button-primary:focus {
-  appearance: none;
-  border: 0;
+ 
   background-color: var(--primary-brand);
   color: var(--white-text);
 }
@@ -190,6 +219,7 @@ ul h2 {
 /* footer */
 .bottom {
   background-color: var(--dark);
+  font-family: "Roboto",sans-serif;
 }
 .bottom-text {
   color: var(--accent);
@@ -201,5 +231,16 @@ ul h2 {
 footer .logo {
   color: var(--light);
 }
-
+.bottom-logo
+{font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.16;
+  color: var(--white-text);
+  text-decoration: none;
+}
+.bottom-logo:focus-visible{
+  outline: none;
+}
 /* #endregion --footer--*/
